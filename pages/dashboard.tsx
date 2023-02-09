@@ -1,3 +1,4 @@
+import Container from "@/components/Container"
 import Mainlayout from "@/layouts/Mainlayout"
 
 const dashboard=()=>{
@@ -5,7 +6,10 @@ const dashboard=()=>{
         <div>
             <Mainlayout
               title={'Dashboard'}
-            >
+            > 
+            <Container>
+              
+            </Container>
               <div>
                 this is dashboard
               </div>
