@@ -5,4 +5,8 @@
 @layer components{
     /* raw css here */
 
+    body{
+        @apply bg-slate-100
+    }
+
 }
