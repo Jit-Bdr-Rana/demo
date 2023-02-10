@@ -17,7 +17,7 @@ const Mainlayout=({title,children}:Props)=>{
             <title>{title||'demo'}</title>
             <link rel="stylesheet" href="" />
         </Head>
-    <main>
+    <main className="">
          <Sidebar/>
             <div className="w-[80%] ml-[17rem]">
               <Navbar/>
