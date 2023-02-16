@@ -3,7 +3,7 @@ import { BsList } from "react-icons/bs";
 
 export default function Navbar() {
    return (
-      <div className="fixed p-5 bg-white ml-[10rem] top-0  text-black shadow-md flex justify-between left-0 right-0">
+      <div className="fixed p-5 bg-white ml-[16rem] top-0  text-black shadow-md flex justify-between left-0 right-0">
          <div className="ml-36">
             <span><BsList size={25} /></span>
          </div>
