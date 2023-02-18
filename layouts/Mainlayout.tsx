@@ -19,7 +19,7 @@ const Mainlayout = ({ title, children }: Props) => {
             </Head>
             <main className="w-full">
                 <Sidebar />
-                <div className=" ml-[22.5rem]">
+                <div className=" ml-[19rem]">
                     <Navbar />
 
                     <div className="pt-16">
