@@ -560,8 +560,8 @@ body {
   margin-top: 0.75rem;
 }
 
-.ml-\[22\.5rem\] {
-  margin-left: 22.5rem;
+.ml-\[19rem\] {
+  margin-left: 19rem;
 }
 
 .ml-\[16rem\] {
@@ -576,20 +576,16 @@ body {
   margin-top: 0.5rem;
 }
 
-.ml-\[22rem\] {
-  margin-left: 22rem;
+.ml-\[5rem\] {
+  margin-left: 5rem;
 }
 
-.ml-\[21rem\] {
-  margin-left: 21rem;
+.ml-\[15rem\] {
+  margin-left: 15rem;
 }
 
-.ml-\[20rem\] {
-  margin-left: 20rem;
-}
-
-.ml-\[19rem\] {
-  margin-left: 19rem;
+.ml-\[17rem\] {
+  margin-left: 17rem;
 }
 
 .flex {
@@ -610,10 +606,6 @@ body {
 
 .w-\[20\%\] {
   width: 20%;
-}
-
-.w-\[80\%\] {
-  width: 80%;
 }
 
 .items-center {
@@ -708,6 +700,22 @@ body {
   padding-top: 1rem;
 }
 
+.pl-\[16rem\] {
+  padding-left: 16rem;
+}
+
+.pl-\[15rem\] {
+  padding-left: 15rem;
+}
+
+.pl-\[13rem\] {
+  padding-left: 13rem;
+}
+
+.pl-\[10rem\] {
+  padding-left: 10rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -760,4 +768,104 @@ body {
 .hover\:bg-purple-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(88 28 135 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:ml-\[15rem\] {
+    margin-left: 15rem;
+  }
+
+  .md\:ml-\[1rem\] {
+    margin-left: 1rem;
+  }
+
+  .md\:ml-\[5rem\] {
+    margin-left: 5rem;
+  }
+
+  .md\:ml-\[8rem\] {
+    margin-left: 8rem;
+  }
+
+  .md\:ml-\[9rem\] {
+    margin-left: 9rem;
+  }
+
+  .md\:ml-\[10rem\] {
+    margin-left: 10rem;
+  }
+
+  .md\:ml-\[11rem\] {
+    margin-left: 11rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:ml-\[17rem\] {
+    margin-left: 17rem;
+  }
+
+  .lg\:ml-\[17\.5rem\] {
+    margin-left: 17.5rem;
+  }
+
+  .lg\:ml-\[15rem\] {
+    margin-left: 15rem;
+  }
+
+  .lg\:ml-\[11rem\] {
+    margin-left: 11rem;
+  }
+
+  .lg\:ml-\[13rem\] {
+    margin-left: 13rem;
+  }
+
+  .lg\:ml-\[14rem\] {
+    margin-left: 14rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:ml-\[12rem\] {
+    margin-left: 12rem;
+  }
+
+  .xl\:ml-\[16rem\] {
+    margin-left: 16rem;
+  }
+
+  .xl\:ml-\[17rem\] {
+    margin-left: 17rem;
+  }
+
+  .xl\:ml-\[18rem\] {
+    margin-left: 18rem;
+  }
+
+  .xl\:ml-\[16\.5rem\] {
+    margin-left: 16.5rem;
+  }
+
+  .xl\:ml-\[16\.8rem\] {
+    margin-left: 16.8rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:ml-\[18rem\] {
+    margin-left: 18rem;
+  }
+
+  .\32xl\:ml-\[19rem\] {
+    margin-left: 19rem;
+  }
+
+  .\32xl\:ml-\[20rem\] {
+    margin-left: 20rem;
+  }
+
+  .\32xl\:ml-\[21rem\] {
+    margin-left: 21rem;
+  }
 }
