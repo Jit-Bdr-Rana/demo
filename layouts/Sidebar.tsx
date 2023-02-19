@@ -4,8 +4,8 @@ import Link from "next/link";
 const Sidebar = () => {
    return (
       <div className="min-h-screen text-white z-50 w-[20%] bg-purple-600 fixed inset-0">
-         <div className=" ">
-            <h1 className="text-3xl px-12">Admin</h1>
+         <div className=" flxe justify-center">
+            <h1 className="text-3xl  pb-2 pt-4 font-bold text-center">Admin</h1>
          </div>
          <div className="mt-2">
             <ul className="">

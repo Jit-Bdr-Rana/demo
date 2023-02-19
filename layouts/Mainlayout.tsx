@@ -18,9 +18,9 @@ const Mainlayout = ({ title, children }: Props) => {
                 <link rel="stylesheet" href="" />
             </Head>
             <main className="w-full">
+                <Navbar />
                 <Sidebar />
-                <div className=" ml-[17rem]">
-                    <Navbar />
+                <div className=" md:ml-[11rem] lg:ml-[14rem] xl:ml-[16.8rem] 2xl:ml-[21rem]">
 
                     <div className="pt-16">
                         {children}
