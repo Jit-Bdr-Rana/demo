@@ -22,7 +22,6 @@ const Dropdown = ({ placeholder, options, wrapperClassName, onSelect }: props) =
             setShow(false);
         }
     };
-
     useEffect(() => {
         document.addEventListener("click", handleClick);
         return () => {
@@ -52,7 +51,7 @@ const Dropdown = ({ placeholder, options, wrapperClassName, onSelect }: props) =
                                         setShow(false);
                                         onSelect && onSelect(_);
                                     }}
-                                    className=" p-2 pl-2 border-b-[#s333333] hover:bg-slate-200 border-b"
+                                    className=" p-2 pl-2 border-b-[#333333] hover:bg-slate-200 border-b"
                                 >
                                     {_.key}
                                 </div>

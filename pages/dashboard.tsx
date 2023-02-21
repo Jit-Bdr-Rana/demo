@@ -1,6 +1,8 @@
 import Container from "@/components/Container"
+import Collpase from "@/components/utils/Collpase"
 import Dropdown from "@/components/utils/Dropdown"
 import Tab from "@/components/utils/Tab"
+import { faqData } from "@/datas/faq"
 import Mainlayout from "@/layouts/Mainlayout"
 
 const breadCrumb: { title: string, link: string }[] = [
@@ -23,6 +25,12 @@ const dashboard = () => {
 export default dashboard
 
 const Dashboard = () => {
+
+
+  const fetchProgram = (key: string) => {
+    ///api
+  }
+
   return (
     <div>
       <Mainlayout
@@ -61,6 +69,7 @@ const Dashboard = () => {
           </div>
           <div className="flex gap-2">
             <Dropdown
+              // onSelect={(option) => fetchProgram(option.key)}
               wrapperClassName="w-[20%] bg-white"
               options={[
                 {
@@ -96,6 +105,17 @@ const Dashboard = () => {
               ]}
               placeholder="choose city"
             />
+          </div>
+          <div className="">
+            <div className="bg-gray-200 mt-8 mb-3 p-2">
+              <h1>Custom Collapse</h1>
+            </div>
+            {
+              faqData?.map((_, i) => (
+                <Collpase heading={_.heading} paragraph={_.paragraph} key={i} />
+              ))
+            }
+
           </div>
         </Container>
       </Mainlayout>
