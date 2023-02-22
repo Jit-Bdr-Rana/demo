@@ -2,7 +2,7 @@ const Table = () => {
     return (
         <div className="bg-white p-2">
             <table className="w-full mt-3">
-                <thead className=" text-white bg-gray-600">
+                <thead className=" text-white bg-purple-600  ">
                     <tr className="">
                         <th className="p-3">SN</th>
                         <th className="p-3">Name</th>

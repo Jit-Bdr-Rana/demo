@@ -30,7 +30,7 @@ const Index = () => {
       >
         <div className="flex justify-end my-5">
           <Link href={'/employee/create'}>
-            <span className="bg-green-500 text-white hover:bg-green-800 rounded-md px-3 py-2">Add Employee</span>
+            <span className="bg-purple-500 text-white hover:bg-purple-800 rounded-md px-3 py-2">Add Employee</span>
           </Link>
         </div>
         <Table />
