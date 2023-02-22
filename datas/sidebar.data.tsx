@@ -1,35 +1,40 @@
-import {FaUserAlt} from 'react-icons/fa'
-import  {BiMoney} from 'react-icons/bi'
-interface   SidebarInterface{
-      title:string;
-      icon:React.ReactNode
-      link:string;
-} 
-const sidebarData:SidebarInterface[]=[
+import { FaDashcube, FaFileAlt, FaUserAlt, FaUserAstronaut, FaUserFriends } from 'react-icons/fa'
+import { BiMoney } from 'react-icons/bi'
+interface SidebarInterface {
+    title: string;
+    icon: React.ReactNode
+    link: string;
+}
+const sidebarData: SidebarInterface[] = [
     {
-        title:'Employee',
-        icon:<FaUserAlt/>,
-        link:'/employee'
+        title: 'Dashboard',
+        icon: <FaDashcube />,
+        link: '/dashboard'
     },
     {
-        title:'Salary',
-        icon:<BiMoney/>,
-        link:'/salary   '
+        title: 'Employee',
+        icon: <FaUserAlt />,
+        link: '/employee'
     },
     {
-        title:'Attendence',
-        icon:<FaUserAlt/>,
-        link:''
+        title: 'Customer',
+        icon: <FaUserFriends />,
+        link: '/employee   '
     },
     {
-        title:'Shipment',
-        icon:<FaUserAlt/>,
-        link:''
+        title: 'Attendence',
+        icon: <FaFileAlt />,
+        link: ''
     },
     {
-        title:'User',
-        icon:<FaUserAlt/>,
-        link:''
+        title: 'Shipment',
+        icon: <FaUserAlt />,
+        link: ''
+    },
+    {
+        title: 'User',
+        icon: <FaUserAlt />,
+        link: ''
     }
 ]
 export default sidebarData;
