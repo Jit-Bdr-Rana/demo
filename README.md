@@ -16,11 +16,23 @@ yarn dev
 # or
 pnpm dev
 ```
+Third, run json server
+```
+npm run server
+```
 
-
-Third, run tailwind
+Forth, run tailwind
 ```
 npm run tailwind
 ```
 At last ,here you go
-(http://localhost:3000)
+(http://localhost:3001)
+
+
+## Documentation
+ tailwind (https://tailwindcss.com/docs)</br>
+ nextjs (https://nextjs.org/docs/getting-started)</br>
+ react-hooks-form (https://react-hook-form.com/)</br>
+ json-server    (https://www.npmjs.com/package/json-server)</br>
+ reacts-icon  (https://react-icons.github.io/react-icons/)
+
