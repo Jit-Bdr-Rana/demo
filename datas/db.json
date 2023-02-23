@@ -17,6 +17,15 @@
       "age": "23",
       "gender": "male",
       "id": 1677044783413
+    },
+    {
+      "name": "krishna",
+      "email": "krishna@gmail.com",
+      "address": "baneshwor",
+      "phone": "9820323222",
+      "age": "23",
+      "gender": "male",
+      "id": 1677117173714
     }
   ]
 }
