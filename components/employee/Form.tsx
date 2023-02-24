@@ -1,5 +1,8 @@
+import { employeeUrl } from "@/apis/list.api";
+import { asyncPost, asyncPut } from "@/apis/rest.api";
 import axios from "axios";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 
 interface FormProps {
@@ -18,27 +21,49 @@ const Form = ({ editData }: FormProps) => {
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
   } = useForm<Employee>();
   const router = useRouter();
   //function that is call after submit
   const saveEmployee = async (value: Employee) => {
     //api call
-
     const payload = {
       ...value,
       id: new Date().getTime(),
     };
-    try {
-      const data = await axios.post("http://localhost:3000/employee", payload);
-      if (data) {
+
+    if (editData && editData?.id) {
+      //update
+      const { data, error } = await asyncPut(
+        employeeUrl.put + editData.id,
+        payload
+      );
+      if (data && !error) {
+        alert("update success");
+        router.push("/employee");
+      }
+    } else {
+      //create
+      const { data, error } = await asyncPost(employeeUrl.post, payload);
+      if (data && !error) {
         alert("saved success");
         router.push("/employee");
       }
-    } catch (e) {
-      alert("fail to save");
     }
   };
+
+  useEffect(() => {
+    if (editData) {
+      setValue("name", editData?.name);
+      setValue("address", editData?.address);
+      setValue("age", editData?.age);
+      setValue("phone", editData?.phone);
+      setValue("email", editData?.email);
+      setValue("gender", editData?.gender);
+      setValue("id", editData?.id);
+    }
+  }, [editData]);
   return (
     <div className="flex  bg-white mx-auto p-16 justify-center  w-[100%]">
       <form

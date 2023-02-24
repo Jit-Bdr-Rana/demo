@@ -1,31 +1,3 @@
 {
-  "employee": [
-    {
-      "name": "ad Admin as",
-      "email": "jitbdrrana8@gmail.com",
-      "address": "kathmandu,nepal",
-      "phone": "9807590188",
-      "age": "12",
-      "gender": "male",
-      "id": 1677044730670
-    },
-    {
-      "name": "ad Admin as",
-      "email": "jitbdrrana8@gmail.com",
-      "address": "kathmandu,nepal",
-      "phone": "9807590188",
-      "age": "23",
-      "gender": "male",
-      "id": 1677044783413
-    },
-    {
-      "name": "krishna",
-      "email": "krishna@gmail.com",
-      "address": "baneshwor",
-      "phone": "9820323222",
-      "age": "23",
-      "gender": "male",
-      "id": 1677117173714
-    }
-  ]
+  "employee": []
 }

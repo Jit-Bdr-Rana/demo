@@ -29,7 +29,6 @@ const Update = () => {
     const { data, error } = await asyncGet(employeeUrl.get + "/" + id);
     if (data && !error) {
       setEmployee(data);
-    } else {
     }
   };
 
