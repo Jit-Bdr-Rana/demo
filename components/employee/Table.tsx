@@ -7,11 +7,15 @@ import { Employee } from "./Form";
 
 const Table = () => {
   const [employeelist, setEmployeelist] = useState<Employee[]>([]);
+  const [filteredEmployeeflist, setFilteredEmployeelist] = useState<Employee[]>(
+    []
+  );
 
   const fetchAllEmploye = async () => {
     const { data, error } = await asyncGet(employeeUrl.get);
     if (data && !error) {
       setEmployeelist(data as Employee[]);
+      setFilteredEmployeelist(data as Employee[]);
     }
   };
   const deleteEmployee = async (id: number) => {
@@ -21,6 +25,7 @@ const Table = () => {
       if (data && !error) {
         // fetchAllEmploye();
         setEmployeelist((c) => c.filter((f) => f.id != id));
+        setFilteredEmployeelist((c) => c.filter((f) => f.id != id));
       }
     }
   };
@@ -32,12 +37,41 @@ const Table = () => {
   // return  f.id!=id
   // }
 
+  const filterSearch = (e: any) => {
+    const value = e.target.value;
+    if (value) {
+      setFilteredEmployeelist(
+        employeelist.filter(
+          (f) =>
+            f.name?.toString().includes(value) ||
+            f.address?.toString().includes(value)
+        )
+      );
+    } else {
+      setFilteredEmployeelist(employeelist);
+    }
+  };
+
   useEffect(() => {
     fetchAllEmploye();
   }, []);
 
   return (
     <div>
+      <div className="flex justify-between my-3 mt-4">
+        <div>
+          <input
+            type="text"
+            onChange={filterSearch}
+            className="border border-gray-400 rounded-md outline-none p-1.5"
+          />
+        </div>
+        <Link href={"/employee/create"}>
+          <span className="bg-purple-500 text-white hover:bg-purple-800 rounded-md px-3 py-2">
+            Add Employee
+          </span>
+        </Link>
+      </div>
       <div className="bg-white p-2">
         {/* {JSON.stringify(employeelist)} */}
         <table className="w-full mt-3">
@@ -52,8 +86,8 @@ const Table = () => {
             </tr>
           </thead>
           <tbody className="">
-            {employeelist?.length < 0 ? (
-              employeelist?.map((data, i) => {
+            {filteredEmployeeflist?.length > 0 ? (
+              filteredEmployeeflist?.map((data, i) => {
                 return (
                   <tr className="hover:bg-gray-200  p-3 text-center">
                     <td className="p-3 ">{i + 1}</td>
