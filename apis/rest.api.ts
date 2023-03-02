@@ -1,7 +1,7 @@
 import axios from "axios"
 
 
-const baseurl:string='http://localhost:3000'
+const baseurl:string='http://localhost:5000'
 
 
 const asyncGet=async(api:string,option?:any)=>{

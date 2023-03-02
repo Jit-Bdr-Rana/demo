@@ -30,7 +30,6 @@ const Form = ({ editData }: FormProps) => {
     //api call
     const payload = {
       ...value,
-      id: new Date().getTime(),
     };
 
     if (editData && editData?.id) {

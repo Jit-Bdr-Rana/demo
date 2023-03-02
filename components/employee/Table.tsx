@@ -14,8 +14,8 @@ const Table = () => {
   const fetchAllEmploye = async () => {
     const { data, error } = await asyncGet(employeeUrl.get);
     if (data && !error) {
-      setEmployeelist(data as Employee[]);
-      setFilteredEmployeelist(data as Employee[]);
+      setEmployeelist(data?.data as Employee[]);
+      setFilteredEmployeelist(data?.data as Employee[]);
     }
   };
   const deleteEmployee = async (id: number) => {
